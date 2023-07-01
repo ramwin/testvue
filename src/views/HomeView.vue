@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="text-orange-500">123</div>
+    <div class="text-orange-500 p-8 h-24">123</div>
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
