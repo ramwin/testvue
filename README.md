@@ -27,3 +27,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 运行tailwind
+```
+npx tailwindcss -i ./src/input.css -o ./putlic/output.css --watch
+```
