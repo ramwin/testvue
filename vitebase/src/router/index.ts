@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import("../views/TestRef.vue"),
     },
     {
+      path: "/test-vue3-json-diff",
+      name: "test-vue3-json-diff",
+      component: () => import("../views/TestVue3JsonDiff.vue"),
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
