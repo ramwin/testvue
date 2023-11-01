@@ -10,6 +10,11 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: "/ant-design",
+      name: "ant-design",
+      component: () => import("../views/TestAntd.vue"),
+    },
+    {
       path: "/testref",
       name: "testref",
       component: () => import("../views/TestRef.vue"),
