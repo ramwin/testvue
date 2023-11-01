@@ -1,10 +1,18 @@
 <template>
   <div>
     <h1>表格</h1>
-    <a-table :dataSource="data" :columns="columns" />
+    <a-table
+        :rowSelection="{ selectedRowKeys: selected, onChange: onSelectChange }"
+      :dataSource="data"
+      :columns="columns"
+      rowKey="id"
+      />
   </div>
 </template>
 <script setup lang="ts">
+import {ref} from "vue"
+type Key = string | number
+
 const columns = [
   {
     name: 'Name',
@@ -33,26 +41,31 @@ const columns = [
 ];
 const data = [
   {
-    key: '1',
+    id: '1',
     name: 'John Brown',
     age: 32,
     address: 'New York No. 1 Lake Park',
     tags: ['nice', 'developer'],
   },
   {
-    key: '2',
+    id: '2',
     name: 'Jim Green',
     age: 42,
     address: 'London No. 1 Lake Park',
     tags: ['loser'],
   },
   {
-    key: '3',
+    id: '3',
     name: 'Joe Black',
     age: 32,
     address: 'Sidney No. 1 Lake Park',
     tags: ['cool', 'teacher'],
   },
 ]
+const selected = ref<Key[]>(['1', '2'])
+const onSelectChange = (selectedRowKeys: Key[]) => {
+  console.log("选择了: ", selectedRowKeys)
+  selected.value = selectedRowKeys
+}
 </script>
 
