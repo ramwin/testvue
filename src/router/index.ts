@@ -10,6 +10,11 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: "/tailwind",
+      name: "tailwind",
+      component: () => import("../views/TailWind.vue"),
+    },
+    {
       path: "/ant-design",
       name: "ant-design",
       component: () => import("../views/TestAntd.vue"),
