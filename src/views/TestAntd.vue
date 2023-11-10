@@ -7,6 +7,22 @@
       :columns="columns"
       rowKey="id"
       />
+    <h1>测试gutter</h1>
+    <p>左右各添加gutter/2的margin, 然后gutter-row添加了gutter/2的padding</p>
+    <a-row :gutter="36">
+      <a-col class="gutter-row" :span="6">
+        <div class="gutter-box">col-6</div>
+      </a-col>
+      <a-col class="gutter-row" :span="6">
+        <div class="gutter-box">col-6</div>
+      </a-col>
+      <a-col class="gutter-row" :span="6">
+        <div class="gutter-box">col-6</div>
+      </a-col>
+      <a-col class="gutter-row" :span="6">
+        <div class="gutter-box">col-6</div>
+      </a-col>
+    </a-row>
   </div>
 </template>
 <script setup lang="ts">
@@ -68,4 +84,9 @@ const onSelectChange = (selectedRowKeys: Key[]) => {
   selected.value = selectedRowKeys
 }
 </script>
-
+<style>
+.gutter-box {
+  background: #0092ff;
+  padding: 8px 0;
+}
+</style>
