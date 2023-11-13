@@ -5,7 +5,7 @@
 </template>
 <script setup lang="ts">
 import { ref } from "vue"
-import SimpleComponent from "../components/SimpleComponent.vue"
+import SimpleComponent from "@/components/SimpleComponent.vue"
 const localid = ref<number>(32)
 const onclick = () => {
     console.log("点击了")
