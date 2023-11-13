@@ -13,5 +13,6 @@
   const a = ref<User>({ name: "张三" })
   const format = () => {
     console.log(typeof(a.value), a.value)
+    
   }
 </script>

@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import("../views/TailWind.vue"),
     },
     {
+      path: "/testplugin",
+      name: "testplugin",
+      component: () => import("../views/TestPlugin.vue"),
+    },
+    {
       path: "/ant-design",
       name: "ant-design",
       component: () => import("../views/TestAntd.vue"),

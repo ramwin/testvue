@@ -16,6 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/ant-design">测试ant-design</RouterLink>
         <RouterLink to="/tailwind">测试css的scope</RouterLink>
         <RouterLink to="/typescript">测试typescript</RouterLink>
+        <RouterLink to="/testplugin">测试插件</RouterLink>
       </nav>
     </div>
   </header>
