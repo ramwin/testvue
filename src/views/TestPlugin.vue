@@ -19,6 +19,6 @@ const onclick = () => {
 }
 const { count } = storeToRefs(counter_store)
 const onclick2 = () => {
-  counter_store.increment();
+  counter_store.increment()
 }
 </script>

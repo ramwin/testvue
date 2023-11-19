@@ -61,7 +61,7 @@ const columns = [
     title: 'Action',
     key: 'action',
   },
-];
+]
 const data = [
   {
     id: '1',

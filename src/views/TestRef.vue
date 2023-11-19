@@ -13,7 +13,7 @@ function create() {
     name: "张三",
     age: 18,
   }
-  my.value.name = "";
+  my.value.name = ""
   console.log(my.value!.name)
 }
 
