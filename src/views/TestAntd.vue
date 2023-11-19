@@ -23,6 +23,13 @@
         <div class="gutter-box">col-6</div>
       </a-col>
     </a-row>
+    <h1>覆盖样式</h1>
+    <a-card style="border: 1px solid red;">
+      <div style="border: 1px solid green;">我是body</div>
+    </a-card>
+    <a-card style="border: 1px solid red;" class="card2">
+      <div style="border: 1px solid green;">我是body, 通过设置.card2 .ant-card-body可以覆盖样式</div>
+    </a-card>
   </div>
 </template>
 <script setup lang="ts">
@@ -88,5 +95,13 @@ const onSelectChange = (selectedRowKeys: Key[]) => {
 .gutter-box {
   background: #0092ff;
   padding: 8px 0;
+}
+</style>
+<style lang="less">
+.card2 {
+  .ant-card-body {
+    border: 1px solid purple;
+    padding: 0px;
+  }
 }
 </style>
