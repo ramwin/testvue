@@ -1,12 +1,23 @@
 <template>
   <div>
     <h1>表格</h1>
+    {{ score_dict }}
+    <a-input v-model:value="score_dict.out">
+    </a-input>
     <a-table
         :rowSelection="{ selectedRowKeys: selected, onChange: onSelectChange }"
       :dataSource="data"
       :columns="columns"
       rowKey="id"
-      />
+    >
+      <template #bodyCell="{ column, record }">
+        <template v-if="column.key === 'score'">
+          <span>
+            <a-input v-model:value="score_dict[record.id]" />
+          </span>
+        </template>
+      </template>
+    </a-table>
     <h1>测试gutter</h1>
     <p>左右各添加gutter/2的margin, 然后gutter-row添加了gutter/2的padding</p>
     <a-row :gutter="36">
@@ -61,6 +72,10 @@ const columns = [
     title: 'Action',
     key: 'action',
   },
+  {
+    title: "score",
+    key: 'score',
+  },
 ]
 const data = [
   {
@@ -85,6 +100,7 @@ const data = [
     tags: ['cool', 'teacher'],
   },
 ]
+const score_dict = ref<{[key: string]: string}>({'out': '342',  '3': '32'})
 const selected = ref<Key[]>(['1', '2'])
 const onSelectChange = (selectedRowKeys: Key[]) => {
   console.log("选择了: ", selectedRowKeys)
