@@ -12,6 +12,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/testvue">测试Vue</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/ant-design">测试ant-design</RouterLink>
         <RouterLink to="/tailwind">测试css的scope</RouterLink>
