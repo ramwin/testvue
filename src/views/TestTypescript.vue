@@ -19,8 +19,8 @@
   }
   const iter = () => {
     const array = [1, 2, 3]
-    array.forEach((num) => {
-      console.log(num)
-    })
+    for (const number_ of array) {
+      console.log(number_)
+    }
   }
 </script>
