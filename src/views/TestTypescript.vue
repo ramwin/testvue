@@ -3,6 +3,8 @@
     <h1>ts类型强转, 默认是类型 + undefined, 最好设置初始值</h1>
     <p>{{ a }}</p>
     <el-button @click="format">点我</el-button>
+    <h1>测试eslint</h1>
+    <el-button @click="iter">循环需要用for</el-button>
   </div>
 </template>
 <script setup lang="ts">
@@ -14,5 +16,11 @@
   const format = () => {
     console.log(typeof(a.value), a.value)
     
+  }
+  const iter = () => {
+    const array = [1, 2, 3]
+    array.forEach((num) => {
+      console.log(num)
+    })
   }
 </script>

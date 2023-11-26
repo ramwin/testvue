@@ -103,7 +103,7 @@ const data = [
 const score_dict = ref<{[key: string]: string}>({'out': '342',  '3': '32'})
 const selected = ref<Key[]>(['1', '2'])
 const onSelectChange = (selectedRowKeys: Key[]) => {
-  console.log("选择了: ", selectedRowKeys)
+  console.log("选择了:", selectedRowKeys)
   selected.value = selectedRowKeys
 }
 </script>

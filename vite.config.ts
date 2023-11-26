@@ -12,10 +12,10 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('src', import.meta.url))
     }
   },
   server: {
-    port: 15173,
+    port: 15_173,
   },
 })

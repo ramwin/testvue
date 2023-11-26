@@ -26,8 +26,8 @@
 <script setup lang="ts">
   import InnerCss from "../components/InnerCss.vue"
   import InnerCss2 from "../components/InnerCss2.vue"
-  import { ref } from "vue"
-  let a = ref("123")
+  // import { ref } from "vue"
+  // let a = ref("123")
 </script>
 <style>
 .box {

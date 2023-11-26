@@ -7,10 +7,21 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     '@vue/eslint-config-typescript',
-    '@vue/eslint-config-prettier/skip-formatting'
+    '@vue/eslint-config-prettier/skip-formatting',
+    'plugin:unicorn/recommended',
   ],
   rules: {
     "semi": ["error", "never"],
+    'unicorn/prevent-abbreviations': [
+      'error',
+      {
+        allowList: {
+          ref: true,
+          env: true,
+          Ref: true,
+        },
+      },
+    ]
   },
   overrides: [
     {
@@ -20,7 +31,18 @@ module.exports = {
       'extends': [
         'plugin:cypress/recommended'
       ]
-    }
+    },
+    {
+      files: ["*.vue", "*.Spec.ts"],
+      rules: {
+        'unicorn/filename-case': [
+          'error',
+          {
+            case: 'pascalCase',
+          },
+        ]
+      },
+    },
   ],
   parserOptions: {
     ecmaVersion: 'latest'
