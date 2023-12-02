@@ -34,7 +34,7 @@ watch(user, () => {
 
 watch(user, () => {
     deep_history.value.push(user.value.age)
-}, {deep: true})
+}, { deep: true })
 
 const grow = () => {
     user.value.age += 1

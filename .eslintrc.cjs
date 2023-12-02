@@ -12,6 +12,7 @@ module.exports = {
   ],
   rules: {
     "semi": ["error", "never"],
+    "object-curly-spacing": ["error", "always"],
     'unicorn/prevent-abbreviations': [
       'error',
       {

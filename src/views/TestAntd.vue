@@ -44,7 +44,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import {ref} from "vue"
+import { ref } from "vue"
 type Key = string | number
 
 const columns = [
@@ -100,7 +100,7 @@ const data = [
     tags: ['cool', 'teacher'],
   },
 ]
-const score_dict = ref<{[key: string]: string}>({'out': '342',  '3': '32'})
+const score_dict = ref<{[key: string]: string}>({ 'out': '342',  '3': '32' })
 const selected = ref<Key[]>(['1', '2'])
 const onSelectChange = (selectedRowKeys: Key[]) => {
   console.log("选择了:", selectedRowKeys)
