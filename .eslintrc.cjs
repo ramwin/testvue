@@ -11,6 +11,7 @@ module.exports = {
     'plugin:unicorn/recommended',
   ],
   rules: {
+    "eqeqeq": ["error", "always"],
     "semi": ["error", "never"],
     "object-curly-spacing": ["error", "always"],
     'unicorn/prevent-abbreviations': [
