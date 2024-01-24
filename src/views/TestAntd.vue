@@ -5,10 +5,10 @@
     <a-input v-model:value="score_dict.out">
     </a-input>
     <a-table
-        :rowSelection="{ selectedRowKeys: selected, onChange: onSelectChange }"
-      :dataSource="data"
+        :row-selection="{ selectedRowKeys: selected, onChange: onSelectChange }"
+      :data-source="data"
       :columns="columns"
-      rowKey="id"
+      row-key="id"
     >
       <template #bodyCell="{ column, record }">
         <template v-if="column.key === 'score'">
