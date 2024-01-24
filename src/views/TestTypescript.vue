@@ -10,9 +10,10 @@
 <script setup lang="ts">
   interface User {
     name: string
+    age: number
   }
   import { ref } from "vue"
-  const a = ref<User>({ name: "张三" })
+  const a = ref<User>({ name: "张三", age: 18 })
   const format = () => {
     console.log(typeof(a.value), a.value)
     
@@ -23,4 +24,7 @@
       console.log(number_)
     }
   }
+  // keyof 可以获取 interface 的属性
+  const field: keyof User = "age"
+  console.log(field)
 </script>
