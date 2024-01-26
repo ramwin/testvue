@@ -9,10 +9,7 @@ const my = ref<Person>()
 
 function create() {
   console.info("创建my")
-  my.value = {
-    name: "张三",
-    age: 18,
-  }
+  my.value = { name: "张三",    age: 18 }
   my.value.name = ""
   console.log(my.value.name)
 }

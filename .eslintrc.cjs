@@ -12,7 +12,25 @@ module.exports = {
     "plugin:unicorn/recommended",
   ],
   rules: {
+    "comma-spacing": [
+      "error", {
+        "before": false,
+        "after": true,
+      }
+    ],
     "eqeqeq": ["error", "always"],
+    "key-spacing": [
+      1, {
+        "singleLine": {
+          "beforeColon": false,
+          "afterColon": true,
+        },
+        "multiLine": {
+          "beforeColon": false,
+          "afterColon": true,
+        }
+      }
+    ],
     "no-unused-vars": ["error"],
     "object-curly-spacing": ["error", "always"],
     "quotes": ["error", "double"],
