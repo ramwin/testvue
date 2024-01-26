@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue"
-import TheWelcome from '../components/TheWelcome.vue'
+import TheWelcome from "../components/TheWelcome.vue"
 interface User {
   id: number
   name: string
@@ -14,7 +14,7 @@ interface JsonUser {
 const jsonData = ref<User>()
 
 onMounted(() => {
-  const data_string = '{"data": {"detail": {"id": 12, "name": "123"}}}'
+  const data_string = "{\"data\": {\"detail\": {\"id\": 12, \"name\": \"123\"}}}"
   const json_data = JSON.parse(data_string) as JsonUser
   jsonData.value = json_data.data.detail
 })

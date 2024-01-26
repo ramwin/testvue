@@ -14,14 +14,16 @@ function create() {
     age: 18,
   }
   my.value.name = ""
-  console.log(my.value!.name)
+  console.log(my.value.name)
 }
 
 onMounted(() => {
-  console.info("载入")
-  console.info(my.value!.name)
-  console.info("当前my是")
-  console.info(my.value)
+  if (my.value !== undefined) {
+    console.info("载入")
+    console.info(my.value.name)
+    console.info("当前my是")
+    console.info(my.value)
+  }
 })
 
 </script>

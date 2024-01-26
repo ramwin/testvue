@@ -1,8 +1,8 @@
-import { ref, computed } from 'vue'
-import { defineStore } from 'pinia'
+import { ref, computed } from "vue"
+import { defineStore } from "pinia"
 
 export const useCounterStore = defineStore(
-  'counter',
+  "counter",
   () => {
     const count = ref(3)
     const doubleCount = computed(() => count.value * 2)
