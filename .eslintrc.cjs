@@ -10,6 +10,7 @@ module.exports = {
     "@vue/eslint-config-prettier",
     "@vue/eslint-config-prettier/skip-formatting",
     "plugin:unicorn/recommended",
+    "prettier",
   ],
   rules: {
     "comma-spacing": [
