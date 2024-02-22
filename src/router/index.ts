@@ -52,6 +52,11 @@ const router = createRouter({
       name: "typescript",
       component: () => import("../views/TestTypescript.vue")
     },
+    {
+      path: "/testramwin",
+      name: "ramwints",
+      component: () => import("../views/TestRamwinTs.vue")
+    },
   ]
 })
 

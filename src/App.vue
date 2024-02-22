@@ -18,6 +18,7 @@ import HelloWorld from "./components/HelloWorld.vue"
         <RouterLink to="/tailwind">测试css的scope</RouterLink>
         <RouterLink to="/typescript">测试typescript</RouterLink>
         <RouterLink to="/testplugin">测试插件</RouterLink>
+        <RouterLink to="/testramwin">测试ramwints</RouterLink>
       </nav>
     </div>
   </header>
