@@ -48,6 +48,7 @@ module.exports = {
       },
     ],
     "vue/mustache-interpolation-spacing": "error",
+    // "vue/no-multi-spaces": "error",
   },
   overrides: [
     {
