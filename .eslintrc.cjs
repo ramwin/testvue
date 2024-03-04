@@ -71,7 +71,14 @@ module.exports = {
       },
     },
   ],
+  parser: "vue-eslint-parser",
   parserOptions: {
-    ecmaVersion: "latest"
-  }
+    ecmaVersion: "latest",
+    ecmaFeatures: {
+      "jsx": true,
+    },
+  },
+  plugins: [
+    "vue",
+  ]
 }
