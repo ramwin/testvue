@@ -29,7 +29,7 @@ onMounted(() => {
   <div>
     <h1>默认ref的值都是undefined</h1>
     <div v-if="my">
-      你好啊: {{my.name}}
+      你好啊: {{ my.name }}
       我是vue组件
     </div>
     <button v-else @click="create">创建my</button>
