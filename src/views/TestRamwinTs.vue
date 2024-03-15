@@ -1,6 +1,6 @@
 <template>
-    <h1>alice</h1>
-    {{  alice }}
+  <h1>alice</h1>
+  {{ alice }}
 </template>
 <script setup lang="ts">
 // import  { type Student } from "ramwints"

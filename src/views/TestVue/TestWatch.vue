@@ -1,8 +1,12 @@
 <template>
   <h1>测试watch</h1>
   {{ user }}
-  <button @click="user.age+=1">点我</button>
-  <button @click="grow">点我赋值</button>
+  <button @click="user.age+=1">
+    点我
+  </button>
+  <button @click="grow">
+    点我赋值
+  </button>
   <p>{{ history }}</p>
   <p>{{ deep_history }}</p>
   <ul>

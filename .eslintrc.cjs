@@ -53,6 +53,12 @@ module.exports = {
       }
     }],
     "vue/mustache-interpolation-spacing": "error",
+    "vue/singleline-html-element-content-newline": ["error", {
+      "ignoreWhenNoAttributes": true,
+      "ignoreWhenEmpty": true,
+      "ignores": ["pre", "textarea", "RouterLink"],  // routerlink用的比较多，我喜欢只放一行
+      "externalIgnores": []
+    }],
     // "vue/no-multi-spaces": "error",
   },
   overrides: [

@@ -1,10 +1,10 @@
 <template>
   <div>我是内部</div>
   <div class="box-container">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box" />
+    <div class="box" />
+    <div class="box" />
+    <div class="box" />
   </div>
 </template>
 <script setup lang="ts">

@@ -2,10 +2,9 @@
   <div>
     <h1>表格</h1>
     {{ score_dict }}
-    <a-input v-model:value="score_dict.out">
-    </a-input>
+    <a-input v-model:value="score_dict.out" />
     <a-table
-        :row-selection="{ selectedRowKeys: selected, onChange: onSelectChange }"
+      :row-selection="{ selectedRowKeys: selected, onChange: onSelectChange }"
       :data-source="data"
       :columns="columns"
       row-key="id"
@@ -22,24 +21,36 @@
     <p>左右各添加gutter/2的margin, 然后gutter-row添加了gutter/2的padding</p>
     <a-row :gutter="36">
       <a-col class="gutter-row" :span="6">
-        <div class="gutter-box">col-6</div>
+        <div class="gutter-box">
+          col-6
+        </div>
       </a-col>
       <a-col class="gutter-row" :span="6">
-        <div class="gutter-box">col-6</div>
+        <div class="gutter-box">
+          col-6
+        </div>
       </a-col>
       <a-col class="gutter-row" :span="6">
-        <div class="gutter-box">col-6</div>
+        <div class="gutter-box">
+          col-6
+        </div>
       </a-col>
       <a-col class="gutter-row" :span="6">
-        <div class="gutter-box">col-6</div>
+        <div class="gutter-box">
+          col-6
+        </div>
       </a-col>
     </a-row>
     <h1>覆盖样式</h1>
     <a-card style="border: 1px solid red;">
-      <div style="border: 1px solid green;">我是body</div>
+      <div style="border: 1px solid green;">
+        我是body
+      </div>
     </a-card>
     <a-card style="border: 1px solid red;" class="card2">
-      <div style="border: 1px solid green;">我是body, 通过设置.card2 .ant-card-body可以覆盖样式</div>
+      <div style="border: 1px solid green;">
+        我是body, 通过设置.card2 .ant-card-body可以覆盖样式
+      </div>
     </a-card>
   </div>
 </template>

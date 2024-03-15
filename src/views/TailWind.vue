@@ -2,23 +2,23 @@
   <div>
     <h1>外部的.box 100高影响到了内部, 内部的flex影响到了外部</h1>
     <div class="box-container">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <div class="box" />
+      <div class="box" />
+      <div class="box" />
+      <div class="box" />
     </div>
     <inner-css />
     <h1>外部设置scope以后外部的和内部的互相不影响</h1>
     <p>外部的css变成了.box2[data-v-7e8dd523] </p>
     <div class="box-container2">
-      <div class="box2"></div>
-      <div class="box2"></div>
+      <div class="box2" />
+      <div class="box2" />
     </div>
     <inner-css2 />
     <h1>如果我通过div把内部框起来</h1>
     <p>只有最外面的box变宽了，因为实际效果是 .box-container3[data-v-7e8dd523] .box2[data-v-7e8dd523] 所有外部的元素的data都一致。 所有内部的data都不一致</p>
     <div class="box-container3">
-      <div class="box2"></div>
+      <div class="box2" />
       <inner-css2 />
     </div>
   </div>

@@ -24,7 +24,7 @@ onMounted(() => {
 <template>
   <main>
     <h1>json的unknow</h1>
-    {{ jsonData  }}
+    {{ jsonData }}
     <RouterLink :to="{name: 'testref'}">测试Ref</RouterLink>
     <TheWelcome />
   </main>

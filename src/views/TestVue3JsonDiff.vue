@@ -18,20 +18,20 @@
   <main>
     <div style="width: 1000px">
       <Vue3JsonDiff
-          :left-value="left_data"
-          :right-value="right_data"
+        :left-value="left_data"
+        :right-value="right_data"
       />
     </div>
     <div style="width: 400px">
       <Vue3JsonDiff
-          :left-value="left_data"
-          :right-value="right_data"
+        :left-value="left_data"
+        :right-value="right_data"
       />
     </div>
     <div style="width: 400px;">
       <Vue3JsonDiff
-          :left-value="{key: 123}"
-          :right-value="{key: 456}"
+        :left-value="{key: 123}"
+        :right-value="{key: 456}"
       />
     </div>
   </main>

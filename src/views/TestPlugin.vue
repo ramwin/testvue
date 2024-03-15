@@ -1,9 +1,13 @@
 <template>
-    <h1>测试autoimport {{ localid }}</h1>
-    <a-button type="primary" @click="onclick">add 1</a-button>
-    <SimpleComponent />
-    <h1>测试pinia-plugin-persistedstate</h1>
-    <a-button @click="onclick2">{{ count }}</a-button>
+  <h1>测试autoimport {{ localid }}</h1>
+  <a-button type="primary" @click="onclick">
+    add 1
+  </a-button>
+  <SimpleComponent />
+  <h1>测试pinia-plugin-persistedstate</h1>
+  <a-button @click="onclick2">
+    {{ count }}
+  </a-button>
 </template>
 <script setup lang="ts">
 import { ref } from "vue"

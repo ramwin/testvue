@@ -32,6 +32,8 @@ onMounted(() => {
       你好啊: {{ my.name }}
       我是vue组件
     </div>
-    <button v-else @click="create">创建my</button>
+    <button v-else @click="create">
+      创建my
+    </button>
   </div>
 </template>

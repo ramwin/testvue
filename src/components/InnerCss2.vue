@@ -1,9 +1,9 @@
 <template>
   <div>我是内部</div>
   <div class="box-container2">
-    <div class="box2"></div>
-    <div class="box2"></div>
-    <div class="box2"></div>
+    <div class="box2" />
+    <div class="box2" />
+    <div class="box2" />
   </div>
 </template>
 <script setup lang="ts">
