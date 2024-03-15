@@ -8,7 +8,7 @@ module.exports = {
     "eslint:recommended",
     "@vue/eslint-config-typescript/recommended",
     "plugin:unicorn/recommended",
-    "prettier",
+    // "prettier",
   ],
   rules: {
     "comma-spacing": [
@@ -44,6 +44,14 @@ module.exports = {
         },
       },
     ],
+    "vue/max-attributes-per-line": ["error", {
+      "singleline": {
+        "max": 4
+      },
+      "multiline": {
+        "max": 1
+      }
+    }],
     "vue/mustache-interpolation-spacing": "error",
     // "vue/no-multi-spaces": "error",
   },
