@@ -10,6 +10,28 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: "/student",
+      name: "student",
+      redirect: {
+        name: "学生列表",
+      },
+      children: [
+        {
+          path: "list",
+          name: "学生列表",
+          component: () => import("@/views/Student/List.vue"),
+        },
+        {
+          path: ":id(\\d+)",
+          name: "学生详情",
+          props: route => ({
+            id: parseInt(route.params.id as string),
+          }),
+          component: () => import("@/views/Student/Detail.vue"),
+        },
+      ],
+    },
+    {
       path: "/tailwind",
       name: "tailwind",
       component: () => import("@/views/TailWind.vue"),
