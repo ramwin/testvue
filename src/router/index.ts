@@ -25,7 +25,7 @@ const router = createRouter({
           path: ":id(\\d+)",
           name: "学生详情",
           props: route => ({
-            id: parseInt(route.params.id as string),
+            id: Number.parseInt(route.params.id as string),
           }),
           component: () => import("@/views/Student/Detail.vue"),
         },

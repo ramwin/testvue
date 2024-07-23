@@ -1,14 +1,17 @@
 <template>
-    <h1>学生 {{ id }}</h1>
+  <h1>学生 {{ id }}</h1>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { onMounted } from "vue"
 
-const props = defineProps({
-    id: Number
+const properties = defineProps({
+    id: {
+      type: Number,
+      default: 0,
+    }
 })
 onMounted(() => {
-    console.log("props.id", props.id, typeof props.id)
+    console.log("props.id", properties.id, typeof properties.id)
 })
 </script>

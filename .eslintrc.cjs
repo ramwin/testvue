@@ -52,6 +52,7 @@ module.exports = {
         "max": 1
       }
     }],
+    "vue/multi-word-component-names": "off",
     "vue/mustache-interpolation-spacing": "error",
     "vue/singleline-html-element-content-newline": ["error", {
       "ignoreWhenNoAttributes": true,
