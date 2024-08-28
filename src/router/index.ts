@@ -75,6 +75,11 @@ const router = createRouter({
       component: () => import("../views/TestTypescript.vue")
     },
     {
+      path: "/testweb3",
+      name: "testweb3",
+      component: () => import("../views/TestWeb3.vue"),
+    },
+    {
       path: "/testramwin",
       name: "ramwints",
       component: () => import("../views/TestRamwinTs.vue")

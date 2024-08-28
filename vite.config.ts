@@ -17,5 +17,9 @@ export default defineConfig({
   },
   server: {
     port: 15_173,
+    open: true,
+    proxy: {
+        "/http": "http://geth.coin.ramwin.com",
+    },
   },
 })
