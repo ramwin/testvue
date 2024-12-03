@@ -12,7 +12,9 @@
     <el-button @click="iter">
       循环需要用for
     </el-button>
-    <div style="color: red" v-if="a.age >= 18">成年了</div>
+    <div v-if="a.age >= 18" style="color: red">
+      成年了
+    </div>
   </div>
 </template>
 <script setup lang="ts">
